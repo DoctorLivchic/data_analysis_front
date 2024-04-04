@@ -1,0 +1,101 @@
+.main_page{
+  background: #241b38;
+}
+.contentStyle {
+  text-align: "center";
+  background-color: #95aacc;
+  margin-right: '10px' 
+};
+.h1{
+  font-size: 300px;
+}
+.cent{
+  display: flex;
+}
+.text{
+  color: #fff;
+}
+.navig{
+  padding-top:2%;
+  padding-right: 70%;
+}
+.btn_home{
+  margin-left: 3%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  background-color: #241b38;
+}
+.logo{
+  color: #fff;
+}
+.contentStyle{
+  padding-top: 2%;
+  padding-right:7%;
+  padding-left:3%;
+}
+
+/*===========================
+	End Footer CSS
+============================*/
+
+/*===========================
+	Footer CSS Main
+============================*/
+.section {
+  width: 300%;
+}
+.footer_main {
+  position: absolute;
+  top: 125%;
+  padding: 0;
+}
+.footer_main .footer-top {
+  text-align: center;
+  padding: 10px 0;
+  background: #232328;
+}
+.footer_main .logo {
+  margin-bottom: 10%;
+}
+.footer_main .social li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.footer_main .social li:last-child {
+  margin: 0;
+}
+.footer_main .social li a {
+  width: 12px;
+  height: 12px;
+  border-radius: 0px;
+  background: #232328;
+  border: 1px solid #42bc7f;
+  line-height: 42px;
+  text-align: center;
+  display: block;
+  color: #42bc7f;
+}
+.footer_main .social li a:hover {
+  box-shadow: 0px 0px 5px #42bc7f inset;
+  color: #fff;
+}
+.footer_main .social li span {
+  font-size: 18px;
+}
+.footer_main .copyright {
+  background: #1d1d21;
+  text-align: center;
+  padding: 25px 0;
+}
+.footer_main .copyright p {
+  color: #666666;
+}
+/*===========================
+	End Footer CSS Main
+============================*/
+
+
+
+
