@@ -3,8 +3,11 @@
 }
 .contentStyle {
   text-align: "center";
-  background-color: #95aacc;
-  margin-right: '10px' 
+  background-color: #241b38;
+  margin-right: '10px' ;
+  color: #fff;
+
+  
 };
 .h1{
   font-size: 300px;
@@ -21,11 +24,29 @@
 }
 .btn_home{
   margin-left: 3%;
+  font-size: 25px;
+  background-color:#2D71D9 ;
+  color: #fff;
+  border-radius: 20px;
+  border-width: 2px;
+  font-family: 'Times New Roman', Times, serif;
+  height: 55px;
+  margin-top: 2%;
+}
+.btn_home_text{
+  background-color:#2268d8 ;
+  border-radius: 5px;
+  border-width: 1px;
+  box-shadow: #78E4FB;
+  color: #fff;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 150%;
+  height: 20%;
 }
 body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
-  background-color: #241b38;
+  background-color: #1D1136;
 }
 .logo{
   color: #fff;
@@ -35,7 +56,97 @@ body {
   padding-right:7%;
   padding-left:3%;
 }
+.slider_auth{
+  background-color: #4B435B;
+  padding-bottom: 28%;
+  padding-top: 10%;
+  margin-left: -5%;
+}
+.slider_reg{
+  background-color: #4B435B;
+  padding-bottom: 28%;
+  padding-top: 10%;
+margin-left: 0.1%;
+}
+.slider_free{
+  background-color: #666177;
+  padding-bottom: 40%;
+  padding-right: 2%;
+  padding-left: 2%;
+}
+.auth_vhod{
+  color: #fff;
+  margin: 10px;
+  margin-left: 10%;
+}
+.auth_text{
+  display: flex;
+  margin-left:0.5% ;
+}
+.auth_vhod_reg{
+  color: #78E4FB;
+  margin: 10px;
+  
+}
+.auth_vhod_mail{
+  color: #fff;
+  margin: 10px;
+  margin-left: 10.5%;
+  padding-top: 5%;
+}
+.button_aut{
+  margin-top: 20px;
+  margin-left: 10%;
+}
+.inp_aut{
+  font-size: 20px;
+  position: relative;
+  width: 50%;
+  margin-left: 10%;
+}
+.btn_inp_aut{
+  font-size: 25px;
+  background-color:#2D71D9 ;
+  color: #fff;
+  border-radius: 20px;
+  width: 56%;
+  border-width: 2px;
+  font-family: 'Times New Roman', Times, serif;
+  height: 55px;
+  margin-top: 2%;
+  
+}
+.logo_auth{
+  padding-left: 45%;
+  padding-top: 60%;
+}
+.contentStyle_aut_logo{
+  background-color: #1D1136;
+  color: #fff;
+}
+.reg_text{
+  margin-left: 10%;
+  display: flex;
+  margin-top: 2%;
 
+}
+.p_reg{
+ color: #fff;
+}
+.p_free{
+  color: #fff;
+  margin-left: 15%;
+  margin-top: 10%;
+  padding-top: 14%;
+  font-size: 150%;
+}
+.head_free{
+  margin-top: 5%;
+  color: #fff;
+}
+.line{
+  background-color: #fff;
+}
 /*===========================
 	End Footer CSS
 ============================*/
