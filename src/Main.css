@@ -5,9 +5,7 @@
   text-align: "center";
   background-color: #241b38;
   margin-right: '10px' ;
-  color: #fff;
-
-  
+  color: #fff; 
 };
 .h1{
   font-size: 300px;
@@ -133,12 +131,18 @@ margin-left: 0.1%;
 .p_reg{
  color: #fff;
 }
-.p_free{
-  color: #fff;
+.button_fre_anali{
   margin-left: 15%;
   margin-top: 10%;
-  padding-top: 14%;
+  padding-bottom: 20%;
   font-size: 150%;
+  background-color: #706b81;
+  color: #fbfbfb;
+  border-radius:  6px;
+  border-color:#706b81 ;
+}
+.button_fre_analit_boby{
+
 }
 .head_free{
   margin-top: 5%;
@@ -146,6 +150,26 @@ margin-left: 0.1%;
 }
 .line{
   background-color: #fff;
+}
+
+.img_user{
+  position: relative;;
+  margin-left: 93%;
+}
+.free_analit_but{
+  display: flex;
+  background-color: #ffffff;
+  padding-left: 3%;
+  border-radius: 5px;
+  margin-left: 3%;
+}
+.free_analytic_doby{
+  display: flex;
+  
+}
+.button_fre_analit_boby{
+ margin-left: 5%;
+ margin-top: 2%; 
 }
 /*===========================
 	End Footer CSS
