@@ -3,7 +3,9 @@ import {useNavigate} from "react-router-dom";
 import { Button, Form, Input, Checkbox, Select, notification,Menu,Image } from "antd";
 import { Layout } from "antd";
 import { HeartTwoTone, DislikeTwoTone, LikeTwoTone } from "@ant-design/icons";
-import myImage from './img/90454.png'
+import myImage from './img/img_home.png'
+import myImageIcon from './img/Icon.png'
+import myImageMan from './img/man.png'
 
 
 export default function News() {
@@ -15,31 +17,36 @@ export default function News() {
 
     return (
         <div className="main_page" id="main_page">	
-                    <header>
-						{/* Кнопки навигации */}                     
-                        <ul className="navig">
-                 		<Form.Item>	
-							<Button onClick={() => {navigate('/pages/Auth')}} className='btn_home'>Авторизация</Button>
-							<Button onClick={() => {navigate('/pages/reg')}} className='btn_home'>Регистрация</Button>				
-						</Form.Item>										
-						 </ul>
-                    </header>
+                   
 
     <div className="cent" id="cent">
         <Content className="contentStyle">
 		<div className="slider" id="slider">
-			<h1>Добро пожаловать в САПК !</h1>
-			<p>В нашей системе можно узнать тенденцию кадрового роста и многое другое!</p>
+			
 			<div className="button">
-				<Button onClick={() => {navigate('/pages/free_analytics')}} className='btn_home_text'>Быстрая аналитика</Button>
+				
+					<img src={myImageIcon } className="img_page_button"/>
+				
+				
+				<Button onClick={() => {navigate('/pages/free_analytics')}} className='btn_home'>Аналитика</Button>
+				<Form.Item>	
+						<Button onClick={() => {navigate('/pages/Auth')}} className='btn_home'>Авторизация</Button>
+						<Button onClick={() => {navigate('/pages/reg')}} className='btn_home'>Регистрация</Button>	
+								
+				</Form.Item>
 			</div>			
 		</div>
         </Content>
 
 		<Content>
+		<div className="img_page_home_q">
 			<div className="img_page_home">
-			<img src={myImage} />
-			</div>		  
+				<img src={myImage} />
+			</div>	
+				<div className="img_page_home_man">
+					<img src={myImageMan} />
+				</div>	
+			</div>  
 		</Content>
 	 </div>  
         </div>   

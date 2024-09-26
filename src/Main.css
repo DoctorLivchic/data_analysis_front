@@ -1,12 +1,7 @@
 .main_page{
   background: #241b38;
 }
-.contentStyle {
-  text-align: "center";
-  background-color: #241b38;
-  margin-right: '10px' ;
-  color: #fff; 
-};
+
 .h1{
   font-size: 300px;
 }
@@ -22,14 +17,20 @@
 }
 .btn_home{
   margin-left: 3%;
-  font-size: 25px;
-  background-color:#2D71D9 ;
+  font-size: 30px;
+  background-color:#3382B8 ;
   color: #fff;
   border-radius: 20px;
-  border-width: 2px;
+  border-width: 0px;
   font-family: 'Times New Roman', Times, serif;
   height: 55px;
-  margin-top: 2%;
+  margin-top: 15%;
+  padding-left: 1%;
+  padding-right: 4%;
+  padding-top: 4px;
+  width: 530px;
+
+  
 }
 .btn_home_text{
   background-color:#2268d8 ;
@@ -51,8 +52,13 @@ body {
 }
 .contentStyle{
   padding-top: 2%;
-  padding-right:7%;
+  padding-right:1%;
   padding-left:3%;
+  margin-right: 5%;
+  text-align: "center";
+  background-color: #241b38;
+  margin-right: '10px' ;
+  color: #fff; 
 }
 .slider_auth{
   background-color: #4B435B;
@@ -71,6 +77,9 @@ margin-left: 0.1%;
   padding-bottom: 40%;
   padding-right: 2%;
   padding-left: 2%;
+  border-radius: 20px;
+  margin-top: 2%;
+  margin-left: 2%;
 }
 .auth_vhod{
   color: #fff;
@@ -144,10 +153,7 @@ margin-left: 0.1%;
 .button_fre_analit_boby{
 
 }
-.head_free{
-  margin-top: 5%;
-  color: #fff;
-}
+
 .line{
   background-color: #fff;
 }
@@ -165,12 +171,47 @@ margin-left: 0.1%;
 }
 .free_analytic_doby{
   display: flex;
+  border-radius: 20px;
   
 }
 .button_fre_analit_boby{
  margin-left: 5%;
  margin-top: 2%; 
 }
+.img_page_home{
+ position: absolute;
+ margin-top: -22%;
+}
+.img_page_home{
+  position: relative;
+}
+.img_page_home_man{
+  position: absolute;
+  margin-top: -46.5%;
+  margin-left: 8%;
+}
+.img_page_button{
+  margin-left:34%;
+}
+/*=================================================*/
+/*============HEDER===================*/
+/*=================================================*/
+
+.head_free{
+  background-color: #544D67;
+  border-radius:  20px;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.icon_hed{
+padding-top: 2%;
+padding-left: 2%;
+}
+
+
+
+
 /*===========================
 	End Footer CSS
 ============================*/

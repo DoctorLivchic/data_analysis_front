@@ -3,7 +3,7 @@ import {useNavigate} from "react-router-dom";
 import { Button, Form, Input, Checkbox, Select, notification,Menu,Image } from "antd";
 import { Layout } from "antd";
 import { EyeInvisibleOutlined, EyeTwoTone } from '@ant-design/icons';
-
+import myImageIcon from '../img/Icon.png'
 
 export default function Reg() {
     const navigate = useNavigate();
@@ -13,7 +13,7 @@ export default function Reg() {
     <div className="auth" id="auth">
         <div className="cent" id="cent">
             <Content className="contentStyle_aut_logo">
-            <p className="logo_auth">LOGO</p>
+                 <img src={myImageIcon }/>
             </Content>
 
             <Content>
