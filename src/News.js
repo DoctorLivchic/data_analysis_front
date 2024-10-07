@@ -4,8 +4,9 @@ import { Button, Form, Input, Checkbox, Select, notification,Menu,Image } from "
 import { Layout } from "antd";
 import { HeartTwoTone, DislikeTwoTone, LikeTwoTone } from "@ant-design/icons";
 import myImage from './img/img_home.png'
-import myImageIcon from './img/Icon.png'
+import myImageIcon from './img/Frame_19.png'
 import myImageMan from './img/man.png'
+import myImagegraph from './img/graph.png'
 
 
 export default function News() {
@@ -13,12 +14,10 @@ export default function News() {
 	const [buttonTextLike, setButtonTextLike] = useState(0);
 	
 	const { Sider, Content } = Layout;
-	
 
     return (
-        <div className="main_page" id="main_page">	
+    <div className="main_page" id="main_page">	
                    
-
     <div className="cent" id="cent">
         <Content className="contentStyle">
 		<div className="slider" id="slider">
@@ -46,6 +45,10 @@ export default function News() {
 				<div className="img_page_home_man">
 					<img src={myImageMan} />
 				</div>	
+					<div className="img_page_home_graph">
+						<img srs={myImagegraph}/>
+						
+					</div>
 			</div>  
 		</Content>
 	 </div>  

@@ -1,5 +1,5 @@
 .main_page{
-  background: #241b38;
+  background: #201438;
 }
 
 .h1{
@@ -30,6 +30,11 @@
   padding-top: 4px;
   width: 530px;
 
+  text-align: center;
+  transition: 0.5s;
+  color: white;
+  box-shadow: 0 0 5px #eee;
+  background-image: linear-gradient(to right, #003CC5 0%, #0B63F6 51%, #003CC5 100%);
   
 }
 .btn_home_text{
@@ -56,7 +61,7 @@ body {
   padding-left:3%;
   margin-right: 5%;
   text-align: "center";
-  background-color: #241b38;
+  background-color: #201438;
   margin-right: '10px' ;
   color: #fff; 
 }
@@ -73,8 +78,8 @@ body {
 margin-left: 0.1%;
 }
 .slider_free{
-  background-color: #666177;
-  padding-bottom: 40%;
+  background-color: #544D67;
+  padding-bottom: 100%;
   padding-right: 2%;
   padding-left: 2%;
   border-radius: 20px;
@@ -145,13 +150,13 @@ margin-left: 0.1%;
   margin-top: 10%;
   padding-bottom: 20%;
   font-size: 150%;
-  background-color: #706b81;
+
+  font-style: "Regular";
+  background-color: #24183C;
   color: #fbfbfb;
   border-radius:  6px;
-  border-color:#706b81 ;
-}
-.button_fre_analit_boby{
-
+  border-width: 0px;
+  text-align: center;
 }
 
 .line{
@@ -172,7 +177,8 @@ margin-left: 0.1%;
 .free_analytic_doby{
   display: flex;
   border-radius: 20px;
-  
+  margin-top: 2%;
+  margin-left: 1.6%;
 }
 .button_fre_analit_boby{
  margin-left: 5%;
@@ -190,8 +196,34 @@ margin-left: 0.1%;
   margin-top: -46.5%;
   margin-left: 8%;
 }
+.img_page_home_graph{
+  position: absolute;
+  margin-top: -46.5%;
+  margin-left: 8%;
+}
 .img_page_button{
-  margin-left:34%;
+  margin-left:28%;
+}
+.button_fre_pref{
+  margin-left: 2.8%;
+  margin-top: 0.3%;
+  font-size: 100%;
+  font-style: "Regular";
+  background-color: #322253;
+  color: #fbfbfb;
+  border-radius:  6px;
+  border-width: 0px;
+}
+.button_pref{
+  margin-left: 2%;
+}
+.Button_grath{
+  margin-left: 2%;
+  position: relative;
+  
+}
+.grath{
+  position: absolute;
 }
 /*=================================================*/
 /*============HEDER===================*/
@@ -203,12 +235,17 @@ margin-left: 0.1%;
   margin-top: 2%;
   margin-left: 2%;
   margin-right: 2%;
+  
 }
 .icon_hed{
+padding-top: 35%;
+padding-left: 25%;
+}
+.icon_heder{
 padding-top: 2%;
 padding-left: 2%;
+padding-bottom: 2%;
 }
-
 
 
 

@@ -5,13 +5,12 @@ import { Layout } from "antd";
 import myImageIconHed from '../img/Icon_hed.png'
 import myImageIconHeduser from '../img/user.png'
 
-export default function Free_analytics() {
+export default function MainAut() {
     const navigate = useNavigate();
 	const { Sider, Content } = Layout;
-	
-
     return (
-        <div className="free_analytics" id="free_analytics">
+        <div className="MainAut" id="MainAut">
+            <div className="free_analytics" id="free_analytics">
             <header>
                 <div className="head_free">
                     <div className="head_free_icon">
@@ -25,37 +24,16 @@ export default function Free_analytics() {
             </header>
 
             <div className="free_analytic_doby">
-                <div className="f">
+                <div className="fr_doby">
                   <Sider className="slider_free">
                     <Button className="button_fre_anali">Cводка</Button>
                     <Button className="button_fre_anali">Отчеты</Button>
                     <Button className="button_fre_anali">Аналитика</Button>
                     <Button onClick={() => {navigate('/')}} className="button_fre_anali">Выход</Button>
-                  </Sider>   
-                </div> 
-           
-                    <Button className="button_fre_pref">Предыдущий месяц</Button>
-                    <Button className="button_fre_pref">Следующий меняц</Button>
-                    <Button className="button_fre_pref">Год</Button>
-                    <Button className="button_fre_pref">5 лет</Button>
-           
-            </div>
-            <div className="Button_grath">
-
-                <div className="grath">
-                    <p>e</p>
-                </div>
-
-                <div className="grath">
-                    <p>e</p>
-                </div>
-                <div className="grath">
-                    <p>e</p>
-                </div>
-                <div className="grath">
-                    <p>e</p>
-                </div>
-            </div>
+                </Sider> 
+                </div>  
+            </div> 
         </div>
-    )
-}
+        </div>
+           )
+        }

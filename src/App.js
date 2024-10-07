@@ -5,6 +5,7 @@ import HomePage from './HomePage';
 import Aut from './pages/Aut';
 import Reg from './pages/Reg';
 import Free_analytics from './pages/Free_analytics';
+import MainAut from './pages/MainAut'
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
               <Route path='/pages/auth' element={<Aut />} />
               <Route path='/pages/reg' element={<Reg />} />
               <Route path='/pages/free_analytics' element={<Free_analytics />} />
+              <Route path='/pages/MainAut' element={<MainAut />} />
           </Routes>
         </BrowserRouter>
         </div>

@@ -3,7 +3,7 @@ import {useNavigate} from "react-router-dom";
 import { Button, Form, Input, Checkbox, Select, notification,Menu,Image } from "antd";
 import { Layout } from "antd";
 import { EyeInvisibleOutlined, EyeTwoTone } from '@ant-design/icons';
-import myImageIcon from '../img/Icon.png'
+import myImageIcon from '../img/Frame_19.png'
 
 export default function Auth() {
     const navigate = useNavigate();
@@ -28,7 +28,7 @@ export default function Auth() {
                 <p className="auth_vhod_mail"> Пароль</p>
                 <Input.Password className="inp_aut" placeholder="Введите пароль"/>
                     <div className="button_aut">
-                        <Button onClick={() => {navigate('/main/Main')}} className='btn_inp_aut'>Войти</Button>
+                        <Button onClick={() => {navigate('/pages/MainAut')}} className='btn_inp_aut'>Войти</Button>
                         <Button onClick={() => {navigate('/')}} className='btn_inp_aut'>Назад</Button>
                     </div>		
             </div>	           	
