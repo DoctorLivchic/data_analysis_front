@@ -30,11 +30,10 @@ export default function Reg() {
                     <p className="p_reg"> Даю согласие на обработку своих персональных данных</p>
                 </div>
                 <div className="button_aut">
-                    <Button onClick={() => {navigate('/pages/MainAut')}} className='btn_inp_aut'>Регистрация</Button>
+                    <Button onClick={() => {navigate('/pages/MainAutCard1')}} className='btn_inp_aut'>Регистрация</Button>
                     <Button onClick={() => {navigate('/')}} className='btn_inp_aut'>Назад</Button>
                 </div>		
             </div>	           	
-            
             </Content>
         </div>  
 

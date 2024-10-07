@@ -122,11 +122,12 @@ margin-left: 0.1%;
   color: #fff;
   border-radius: 20px;
   width: 56%;
-  border-width: 2px;
+  border-width: 0px;
   font-family: 'Times New Roman', Times, serif;
   height: 55px;
   margin-top: 2%;
   
+ 
 }
 .logo_auth{
   padding-left: 45%;

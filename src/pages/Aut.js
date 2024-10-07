@@ -28,7 +28,7 @@ export default function Auth() {
                 <p className="auth_vhod_mail"> Пароль</p>
                 <Input.Password className="inp_aut" placeholder="Введите пароль"/>
                     <div className="button_aut">
-                        <Button onClick={() => {navigate('/pages/MainAut')}} className='btn_inp_aut'>Войти</Button>
+                        <Button onClick={() => {navigate('/pages/MainAutCard1')}} className='btn_inp_aut'>Войти</Button>
                         <Button onClick={() => {navigate('/')}} className='btn_inp_aut'>Назад</Button>
                     </div>		
             </div>	           	

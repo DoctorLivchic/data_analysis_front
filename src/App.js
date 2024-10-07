@@ -5,7 +5,8 @@ import HomePage from './HomePage';
 import Aut from './pages/Aut';
 import Reg from './pages/Reg';
 import Free_analytics from './pages/Free_analytics';
-import MainAut from './pages/MainAut'
+import MainAut from './pages/MainAut';
+import MainAutCard1 from './pages/MainAutCard1';
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
               <Route path='/pages/reg' element={<Reg />} />
               <Route path='/pages/free_analytics' element={<Free_analytics />} />
               <Route path='/pages/MainAut' element={<MainAut />} />
+              <Route path='/pages/MainAutCard1' element={<MainAutCard1 />} />
           </Routes>
         </BrowserRouter>
         </div>
