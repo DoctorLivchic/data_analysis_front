@@ -1,15 +1,19 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useState,useRef} from "react";
 import {useNavigate} from "react-router-dom";
 import { Button, Form, Input, Checkbox, Select, notification,Menu,Image } from "antd";
 import { Layout } from "antd";
 import myImageIconHed from '../img/Icon_hed.png'
 import myImageIconHeduser from '../img/user.png'
+import * as d3 from "d3";
+
+
+import Chart from 'chart.js/auto';
 
 export default function Free_analytics() {
     const navigate = useNavigate();
 	const { Sider, Content } = Layout;
-	
-
+   
+   
     return (
         <div className="free_analytics" id="free_analytics">
             <header>
@@ -43,7 +47,9 @@ export default function Free_analytics() {
             <div className="Button_grath">
 
                 <div className="grath">
-                    <p>e</p>
+            
+             
+
                 </div>
 
                 <div className="grath">
