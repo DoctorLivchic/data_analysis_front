@@ -22,17 +22,34 @@ export default function MainAutCard1() {
                 </div> 
             </header>
 
-
-            <div className="free_analytic_doby">
+        <div className="analitic_blok">
+            <div className="free_analytic_slider">
                 <div className="f">
                   <Sider className="slider_free">
-                    <Button className="button_fre_anali">Cводка</Button>
-                    <Button className="button_fre_anali">Отчеты</Button>
-                    <Button className="button_fre_anali">Аналитика</Button>
-                    <Button onClick={() => {navigate('/')}} className="button_fre_anali">Выход</Button>
+                    <div className="slider_free_button">
+                        <p className="slider_free_button_p">Главная</p>
+                        <Button className="button_fre_anali">Cферы</Button>
+                        <Button className="button_fre_anali">Направления</Button>
+                        <Button className="button_fre_anali">Аналитика</Button>
+                        
+                    </div>
+                    <div className="slider_free_button">
+                        <p className="slider_free_button_p">Опции</p>
+                        <Button className="button_fre_anali">Отчеты</Button>
+                        <Button className="button_fre_anali">Сводки</Button>
+                    </div>
+                    <div className="slider_free_button_exit">
+                        <Button onClick={() => {navigate('/')}} className="button_fre_anali">Выход</Button>
+                    </div>
                   </Sider>   
                 </div> 
-            </div> 
+                </div>
+            <div className="free_analytic_doby">
+                        <p className="slider_free_button_p" > Текст</p>
+            </div>
+
+             
+        </div>
 
         </div>
     )

@@ -7,12 +7,25 @@ import myImageIconHeduser from '../img/user.png'
 import * as d3 from "d3";
 
 
+
 import Chart from 'chart.js/auto';
 
 export default function Free_analytics() {
     const navigate = useNavigate();
 	const { Sider, Content } = Layout;
-   
+    const [data, setData] = useState({
+        labels: [],
+        datasets: [
+          {
+            label: 'Динамические данные',
+            data: [],
+            fill: false,
+            backgroundColor: 'rgba(75,192,192,0.4)',
+            borderColor: 'rgba(75,192,192,1)',
+          },
+        ],
+      });
+    
    
     return (
         <div className="free_analytics" id="free_analytics">
@@ -37,7 +50,7 @@ export default function Free_analytics() {
                     <Button onClick={() => {navigate('/')}} className="button_fre_anali">Выход</Button>
                   </Sider>   
                 </div> 
-           
+                
                     <Button className="button_fre_pref">Предыдущий месяц</Button>
                     <Button className="button_fre_pref">Следующий меняц</Button>
                     <Button className="button_fre_pref">Год</Button>
@@ -48,7 +61,7 @@ export default function Free_analytics() {
 
                 <div className="grath">
             
-             
+                    
 
                 </div>
 
