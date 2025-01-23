@@ -3,7 +3,7 @@ import {useNavigate} from "react-router-dom";
 import { Button, Form, Input, Checkbox, Select, notification,Menu,Image } from "antd";
 import { Layout } from "antd";
 import myImageIconHed from '../img/Icon_hed.png'
-import myImageIconHeduser from '../img/user.png'
+import myImageIconHeduser from '../img/Icon_hed_user.png'
 
 export default function MainAut() {
     const navigate = useNavigate();
