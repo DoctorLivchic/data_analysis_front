@@ -77,17 +77,18 @@ body {
   padding-top: 10%;
 margin-left: 0.1%;
 }
+
 .slider_free{
   background-color: #544D67;
   padding-bottom: 1%;
   padding-right: 1.2%;
   padding-left: 1.2%;
   border-radius: 20px;
-  margin-left: 0.3%;
+  margin-left: repeat(auto-fit, 0.3%);
   position: absolute;
 }
 .slider_free_button{
-  margin-bottom: 1%;
+  margin-bottom: repeat(auto-fit, 1%);
   font-style: "Regular";
   background-color: #24183C;
   color: #fbfbfb;
@@ -193,9 +194,9 @@ margin-left: 0.1%;
 }
 .button_fre_anali{
   margin-left: 5%;
-  margin-top: 1%;
-  padding-bottom: 20%;
-  font-size: 130%;
+  margin-top: repeat(auto-fit,1%); 
+  padding-bottom: repeat(auto-fit,20%);
+  font-size: repeat(auto-fit,130%); 
 
   font-style: "Regular";
   background-color: #24183C;
@@ -284,24 +285,47 @@ margin-left: 0.1%;
 /*=================================================*/
 /*============HEDER===================*/
 /*=================================================*/
-
-.head_free{
-  background-color: #544D67;
-  border-radius:  20px;
-  margin-top: 1.5%;
-  margin-left: 2%;
-  margin-right: 2%;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  padding-left: 2%;
-  display: flex;
+@media screen and (min-width: 600px) {
+  .head_free{
+    background-color: #544D67;
+    border-radius:  20px;
+    margin-top: 1.5%;
+    margin-left:  1.55%;
+    margin-right: 2%; 
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+  }
 }
+
+@media screen and (max-width: 600px) {
+  .head_free{
+    background-color: #544D67;
+    border-radius:  20px;
+    margin-top: 1.5%;
+    margin-left:  1.55%;
+    margin-right: 2%; 
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+  }
+}
+
 .head_free_icon{
   position: relative;
+
 }
 .head_free_user{
-  margin-left: 80%;
-  position: relative;
+  flex-direction: row;
+  justify-content: space-between;
 
 }
 .icon_hed{
@@ -317,6 +341,7 @@ padding-bottom: 0.5%;
   padding-top: 2%;
   padding-left: 2%;
   padding-bottom: 0.5%;
+  max-width: 100%;
 }
 
 

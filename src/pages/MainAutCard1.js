@@ -18,9 +18,8 @@ export default function MainAutCard1() {
 
                     <div className="head_free_user">
                         <p>ntrcm</p>
-                        <UserOutlined />
-                        <img scr={myImageIconHeduser} className="icon_heder_user"/>
                     </div>
+        
                 </div> 
             </header>
 
