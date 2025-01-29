@@ -7,6 +7,7 @@ import Reg from './pages/Reg';
 import Free_analytics from './pages/Free_analytics';
 import MainAut from './pages/MainAut';
 import MainAutCard1 from './pages/MainAutCard1';
+import Sphere_card from './pages/Sphere_card';
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
               <Route path='/pages/free_analytics' element={<Free_analytics />} />
               <Route path='/pages/MainAut' element={<MainAut />} />
               <Route path='/pages/MainAutCard1' element={<MainAutCard1 />} />
+              <Route path='/pages/Sphere_card' element={<Sphere_card />} />
           </Routes>
         </BrowserRouter>
         </div>
@@ -28,3 +30,4 @@ class App extends Component {
 }
 
 export default App;
+
