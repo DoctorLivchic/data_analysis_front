@@ -4,6 +4,9 @@ import { Button, Form, Input, Checkbox, Select, notification,Menu,Image } from "
 import { Layout } from "antd";
 import myImageIconHed from '../img/Icon_hed.png'
 import myImageIconHeduser from '../img/Icon_hed_user.png'
+import LineChart from '../components/LineChart';
+import { HeartTwoTone, DislikeTwoTone, LikeTwoTone,UserOutlined } from "@ant-design/icons";
+import * as d3 from 'd3';
 
 export default function MainAutCard1() {
     const navigate = useNavigate();
@@ -17,7 +20,7 @@ export default function MainAutCard1() {
                     </div>
 
                     <div className="head_free_user">
-                        <p>ntrcm</p>
+                        <img src={myImageIconHeduser } className="icon_heder_user"/>
                     </div>
                 </div> 
             </header>
@@ -43,7 +46,7 @@ export default function MainAutCard1() {
              
                 
             <div className="free_analytic_doby">
-                <p className="slider_free_button_p" > Текст</p>
+                <LineChart />
             </div>
 
         </div>   

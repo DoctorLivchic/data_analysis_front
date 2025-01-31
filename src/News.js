@@ -20,21 +20,16 @@ export default function News() {
                    
     <div className="cent" id="cent">
         <Content className="contentStyle">
-		<div className="slider" id="slider">
-			
-			<div className="button">
-				
+				<div className="button">		
 					<img src={myImageIcon } className="img_page_button"/>
-				
-				
-				<Button onClick={() => {navigate('/pages/free_analytics')}} className='btn_home'>Аналитика</Button>
-				<Form.Item>	
-						<Button onClick={() => {navigate('/pages/Auth')}} className='btn_home'>Авторизация</Button>
-						<Button onClick={() => {navigate('/pages/reg')}} className='btn_home'>Регистрация</Button>	
-								
-				</Form.Item>
-			</div>			
-		</div>
+				</div>
+				<div className="button">	
+						<Button onClick={() => {navigate('/pages/free_analytics')}} className='btn_home'>Аналитика</Button>
+							<Form.Item>	
+								<Button onClick={() => {navigate('/pages/Auth')}} className='btn_home'>Авторизация</Button>
+								<Button onClick={() => {navigate('/pages/reg')}} className='btn_home'>Регистрация</Button>				
+							</Form.Item>
+				</div>							
         </Content>
 
 		<Content>

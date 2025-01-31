@@ -18,12 +18,12 @@ export default function Reg() {
 
             <Content>
             <div className="slider_reg" id="slider_reg">   
-                <h1 className="auth_vhod">Регистрация </h1>  
-                <p className="auth_vhod_mail"> E-mail</p>
+                    <h1 className="auth_vhod">Регистрация </h1>  
+                    <p className="auth_vhod_mail"> E-mail</p>
                 <Input className="inp_aut" placeholder="Введите E-mail"/>
-                <p className="auth_vhod_mail"> Пароль</p>
+                    <p className="auth_vhod_mail"> Пароль</p>
                 <Input.Password className="inp_aut" placeholder="Введите пароль"/>
-                <p className="auth_vhod_mail"> Пароль еще раз</p>
+                    <p className="auth_vhod_mail"> Пароль еще раз</p>
                 <Input.Password className="inp_aut" placeholder="Введите пароль еще раз"/>
                 <div className="reg_text">
                     <Checkbox className="chek_reg" > </Checkbox>
@@ -36,7 +36,6 @@ export default function Reg() {
             </div>	           	
             </Content>
         </div>  
-
     </div>
     )
 }

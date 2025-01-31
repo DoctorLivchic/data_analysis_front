@@ -16,8 +16,7 @@ export default function Auth() {
                 <img src={myImageIcon } className="icon_hed"/>
             </Content>
 
-            <Content>
-            <div className="slider_auth" id="slider_auth">   
+            <Content className="slider_auth" id="slider_auth">  
                 <h1 className="auth_vhod">Вход в систему</h1>
                 <div className="auth_text">
                     <p className="auth_vhod">Еще не зарегестрированны ? </p>
@@ -30,9 +29,7 @@ export default function Auth() {
                     <div className="button_aut">
                         <Button onClick={() => {navigate('/pages/MainAutCard1')}} className='btn_inp_aut'>Войти</Button>
                         <Button onClick={() => {navigate('/')}} className='btn_inp_aut'>Назад</Button>
-                    </div>		
-            </div>	           	
-            
+                    </div>			           	
             </Content>
         </div>  
 
