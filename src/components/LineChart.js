@@ -17,7 +17,6 @@ const LineChart = () => {
         fill: false,
         backgroundColor: 'rgb(75, 192, 192)',
         borderColor: 'rgba(75, 192, 192, 0.2)',
-        
       },
     ],
   };
