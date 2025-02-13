@@ -8,6 +8,7 @@ import Free_analytics from './pages/Free_analytics';
 import MainAut from './pages/MainAut';
 import MainAutCard1 from './pages/MainAutCard1';
 import Sphere_card from './pages/Sphere_card';
+import HomePageAut from './pages/HomePageAut';
 
 class App extends Component {
   render() {
@@ -22,6 +23,7 @@ class App extends Component {
               <Route path='/pages/MainAut' element={<MainAut />} />
               <Route path='/pages/MainAutCard1' element={<MainAutCard1 />} />
               <Route path='/pages/Sphere_card' element={<Sphere_card />} />
+              <Route path='/pages/HomePageAut' element={<HomePageAut />} />
           </Routes>
         </BrowserRouter>
         </div>

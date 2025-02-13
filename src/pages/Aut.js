@@ -4,10 +4,38 @@ import { Button, Form, Input, Checkbox, Select, notification,Menu,Image } from "
 import { Layout } from "antd";
 import { EyeInvisibleOutlined, EyeTwoTone } from '@ant-design/icons';
 import myImageIcon from '../img/Frame_19.png'
+import __ROLE__ from './CONST';
 
 export default function Auth() {
     const navigate = useNavigate();
     const { Content } = Layout;
+    const [username, setUsername] = useState('')
+  
+    let login = undefined;
+    let password = undefined;
+
+    function handleChange(event) {
+        const target = event.target;
+        const value = target.value;
+        if (target.name === "login"){login = value}
+        if (target.name === "password"){password = value}
+    }
+    async function handleSubmit(event){
+        event.preventDefault();
+        if (login === "dir" && password === "dir") {
+            __ROLE__.role = "DIR";
+            navigate("/worker");
+        }
+        if (login === "prog" && password === "prog") {
+            __ROLE__.role = "PROG";
+            navigate("/move");
+        }
+        if (login === "test" && password === "test") {
+            __ROLE__.role = "TEST";
+            navigate("/move");
+    }
+}
+
     return (
         
     <div className="auth" id="auth">
@@ -23,9 +51,9 @@ export default function Auth() {
                     <p className="auth_vhod_reg" onClick={() => {navigate('/pages/reg')}} > Регистрация</p>
                 </div>   
                 <p className="auth_vhod_mail"> E-mail</p>
-                <Input className="inp_aut" placeholder="Введите E-mail"/>
+                <Input className="inp_aut" placeholder="Введите E-mail" />
                 <p className="auth_vhod_mail"> Пароль</p>
-                <Input.Password className="inp_aut" placeholder="Введите пароль"/>
+                <Input.Password className="inp_aut" placeholder="Введите пароль" />
                     <div className="button_aut">
                         <Button onClick={() => {navigate('/pages/MainAutCard1')}} className='btn_inp_aut'>Войти</Button>
                         <Button onClick={() => {navigate('/')}} className='btn_inp_aut'>Назад</Button>

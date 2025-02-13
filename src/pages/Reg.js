@@ -8,6 +8,10 @@ import myImageIcon from '../img/Frame_19.png'
 export default function Reg() {
     const navigate = useNavigate();
     const { Content } = Layout;
+    const [username, setUsername] = useState('')
+    const [password, setpassword] = useState('')
+    const [error, seterror] = useState('')
+
     return (
         
     <div className="auth" id="auth">
