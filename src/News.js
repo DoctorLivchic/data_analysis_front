@@ -26,7 +26,7 @@ export default function News() {
 				<div className="button">	
 						<Button onClick={() => {navigate('/pages/free_analytics')}} className='btn_home'>Аналитика</Button>
 							<Form.Item>	
-								<Button onClick={() => {navigate('/pages/Auth')}} className='btn_home'>Авторизация</Button>
+								<Button onClick={() => {navigate('/pages/Auth')}} className='btn_home'>Вход</Button>
 								<Button onClick={() => {navigate('/pages/reg')}} className='btn_home'>Регистрация</Button>				
 							</Form.Item>
 				</div>							

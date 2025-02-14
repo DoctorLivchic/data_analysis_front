@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import {useNavigate} from "react-router-dom";
 import { Button, Form, Input, Checkbox, Select, notification,Menu,Image } from "antd";
+import Footer from "../components/Footer";
 import { Layout } from "antd";
 import { EyeInvisibleOutlined, EyeTwoTone } from '@ant-design/icons';
 import myImageIcon from '../img/Frame_19.png'
@@ -53,14 +54,26 @@ export default function Auth() {
                 <p className="auth_vhod_mail"> E-mail</p>
                 <Input className="inp_aut" placeholder="Введите E-mail" />
                 <p className="auth_vhod_mail"> Пароль</p>
+                <Form.Item
+                name="password"
+                rules={
+                [
+                    {
+                        required: true,
+                        message:"Пароль не может быть пустым"
+                    }
+                ]
+                }
+                >
                 <Input.Password className="inp_aut" placeholder="Введите пароль" />
+                </Form.Item>
                     <div className="button_aut">
                         <Button onClick={() => {navigate('/pages/MainAutCard1')}} className='btn_inp_aut'>Войти</Button>
                         <Button onClick={() => {navigate('/')}} className='btn_inp_aut'>Назад</Button>
                     </div>			           	
             </Content>
         </div>  
-
+        <Footer/>
     </div>
 )
 }

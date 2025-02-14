@@ -4,6 +4,7 @@ import { Button, Form, Input, Checkbox, Select, notification,Menu,Image } from "
 import { Layout } from "antd";
 import myImageIconHed from '../img/Icon_hed.png'
 import myImageIconHeduser from '../img/Icon_hed_user.png'
+import Heder from "../components/Heder";
 import * as d3 from "d3";
 
 
@@ -29,17 +30,7 @@ export default function Free_analytics() {
    
     return (
         <div className="free_analytics" id="free_analytics">
-            <header>
-                <div className="head_free">
-                    <div className="head_free_icon">
-                         <img src={myImageIconHed } className="icon_heder"/>
-                    </div>
-
-                    <div className="head_free_user">
-                        <img scr={myImageIconHeduser} className="icon_heder_user"/>
-                    </div>
-                </div> 
-            </header>
+          <Heder/>
 
             <div className="free_analytic_doby">
                 <Sider className="slider_free">

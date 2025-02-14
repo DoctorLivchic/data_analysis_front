@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import {useNavigate} from "react-router-dom";
 import { Button, Form, Input, Checkbox, Select, notification,Menu,Image } from "antd";
 import { Layout } from "antd";
+import Footer from "../components/Footer";
 import { EyeInvisibleOutlined, EyeTwoTone } from '@ant-design/icons';
 import myImageIcon from '../img/Frame_19.png'
 
@@ -40,6 +41,7 @@ export default function Reg() {
             </div>	           	
             </Content>
         </div>  
+        <Footer/>
     </div>
     )
 }

@@ -8,6 +8,7 @@
 .cent{
   display: flex;
   flex-direction: row;
+
 }
 .text{
   color: #fff;
@@ -70,7 +71,7 @@ body {
 }
 .slider_auth{
   background-color: #4B435B;
-  padding-bottom: 10%;
+  padding-bottom: 20%;
   padding-top: 10%;
   margin-left: -5%;
   display: flex;
@@ -78,7 +79,7 @@ body {
 }
 .slider_reg{
   background-color: #4B435B;
-  padding-bottom: 10%;
+  padding-bottom: 20%;
   padding-top: 10%;
   margin-left: 0.1%;
   display: flex;
@@ -124,6 +125,7 @@ body {
   margin: 10px;
   margin-left: 10%;
 }
+
 .auth_text{
   display: flex;
   margin-left:0.5% ;
@@ -131,8 +133,13 @@ body {
 .auth_vhod_reg{
   color: #78E4FB;
   margin: 10px;
-  
+  transition: transform 500ms ease;
+  cursor: pointer;
 }
+.auth_vhod_reg :hover{
+  transform: scale(1.4) translateY(+10px);
+  }
+
 .auth_vhod_mail{
   color: #fff;
   margin: 10px;
@@ -432,7 +439,15 @@ padding-bottom: 0.5%;
 /*===========================
 	End Footer CSS Main
 ============================*/
-
+/*===========================
+	Footer
+============================*/
+.Footer{
+color: #ffffff;
+position: absolute;
+justify-content: center;
+padding-left: 30%;
+}
 
 
 
