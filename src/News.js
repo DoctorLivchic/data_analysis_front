@@ -7,6 +7,7 @@ import myImage from './img/img_home.png'
 import myImageIcon from './img/Frame_19.png'
 import myImageMan from './img/man.png'
 import myImagegraph from './img/graph.png'
+import Main_Page_Anim from './components/Main_Page_Anim'
 
 
 export default function News() {
@@ -20,30 +21,19 @@ export default function News() {
                    
     <div className="cent" id="cent">
         <Content className="contentStyle">
-				<div className="button">		
+				<div className="button_main_page">		
 					<img src={myImageIcon } className="img_page_button"/>
-				</div>
-				<div className="button">	
 						<Button onClick={() => {navigate('/pages/free_analytics')}} className='btn_home'>Аналитика</Button>
 							<Form.Item>	
 								<Button onClick={() => {navigate('/pages/Auth')}} className='btn_home'>Вход</Button>
 								<Button onClick={() => {navigate('/pages/reg')}} className='btn_home'>Регистрация</Button>				
 							</Form.Item>
-				</div>							
+				</div>						
         </Content>
 
-		<Content>
-		<div className="img_page_home_q">
-			<div className="img_page_home">
-				<img src={myImage} />
-			</div>	
-				<div className="img_page_home_man">
-					<img src={myImageMan} />
-				</div>	
-					<div className="img_page_home_graph">
-						<img srs={myImagegraph}/>
-						
-					</div>
+		<Content className="cent_anim">
+			<div className="img_page_home_q">
+					<Main_Page_Anim/>
 			</div>  
 		</Content>
 	 </div>  

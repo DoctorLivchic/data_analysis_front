@@ -23,7 +23,13 @@ export default function Reg() {
 
             <Content>
             <div className="slider_reg" id="slider_reg">   
-                    <h1 className="auth_vhod">Регистрация </h1>  
+                    <h1 className="auth_vhod">Регистрация </h1> 
+                    <p className="auth_vhod_mail"> Имя</p>
+                <Input className="inp_aut" placeholder="Введите свое имя"/> 
+                    <p className="auth_vhod_mail"> Фамилия</p>
+                <Input className="inp_aut" placeholder="Введите свою фамилию"/>
+                    <p className="auth_vhod_mail"> Отчество</p>
+                <Input className="inp_aut" placeholder="Введите свое отчество"/>
                     <p className="auth_vhod_mail"> E-mail</p>
                 <Input className="inp_aut" placeholder="Введите E-mail"/>
                     <p className="auth_vhod_mail"> Пароль</p>

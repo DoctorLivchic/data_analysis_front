@@ -65,8 +65,9 @@ export default function Auth() {
                 ]
                 }
                 >
-                <Input.Password className="inp_aut" placeholder="Введите пароль" />
+                    <Input.Password className="inp_aut" placeholder="Введите пароль" />
                 </Form.Item>
+                
                     <div className="button_aut">
                         <Button onClick={() => {navigate('/pages/MainAutCard1')}} className='btn_inp_aut'>Войти</Button>
                         <Button onClick={() => {navigate('/')}} className='btn_inp_aut'>Назад</Button>
