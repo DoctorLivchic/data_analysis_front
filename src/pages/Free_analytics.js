@@ -28,9 +28,7 @@ export default function Free_analytics() {
 
             <div className="Button_grath">
 
-                <div className="grath">
-            
-                    
+                <div className="grath">   
 
                 </div>
 
