@@ -15,8 +15,13 @@ export default function Free_analytics() {
    
     return (
         <div className="free_analytics" id="free_analytics">
-          <Heder/>
-          <Slider_free/>
+          <div className="Free_analytics_hed">
+            <Heder/>
+          </div>
+        <div className="Free_analytics_slider">
+            <Slider_free/>
+        </div>         
+          
             <div className="free_analytic_doby">
                     <Button className="button_fre_pref">Предыдущий месяц</Button>
                     <Button className="button_fre_pref">Следующий меняц</Button>
@@ -24,13 +29,9 @@ export default function Free_analytics() {
                     <Button className="button_fre_pref">5 лет</Button>          
             </div>
 
-
-
             <div className="Button_grath">
 
-                <div className="grath">
-            
-                    
+                <div className="grath">                 
 
                 </div>
 

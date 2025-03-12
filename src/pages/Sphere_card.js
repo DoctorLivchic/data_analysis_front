@@ -12,8 +12,6 @@ export default function Sphere_card() {
     const navigate = useNavigate();
 	const { Sider, Content } = Layout;
     
-
-    
     return (
         <div className="Sphere_card" id="Sphere_card">
             <Heder/>
