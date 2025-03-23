@@ -8,7 +8,7 @@ import myImageIcon from './img/Frame_19.png'
 import myImageMan from './img/man.png'
 import myImagegraph from './img/graph.png'
 import Main_Page_Anim from './components/Main_Page_Anim'
-
+import { Footer } from "antd/es/layout/layout";
 
 export default function News() {
     const navigate = useNavigate();
@@ -28,7 +28,8 @@ export default function News() {
 								<Button onClick={() => {navigate('/pages/Auth')}} className='btn_home'>Вход</Button>
 								<Button onClick={() => {navigate('/pages/reg')}} className='btn_home'>Регистрация</Button>				
 							</Form.Item>
-				</div>						
+				</div>	
+									
         </Content>
 
 		<Content className="cent_anim">
@@ -36,6 +37,7 @@ export default function News() {
 					<Main_Page_Anim/>
 			</div>  
 		</Content>
+		
 	 </div>  
         </div>   
     )

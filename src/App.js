@@ -11,6 +11,8 @@ import Sphere_card from './pages/Sphere_card';
 import HomePageAut from './pages/HomePageAut';
 import Sphere from './components/Sphere'
 import Slider_free from './components/Slider_free';
+import Slider from './components/Slider';
+import Free_param from './components/Free_param';
 
 class App extends Component {
  
@@ -30,6 +32,8 @@ class App extends Component {
               <Route path='/pages/HomePageAut' element={<HomePageAut />} />
               <Route path='/components/Sphere' element={<Sphere />} />
               <Route path='/components/Slider_free' element={<Slider_free />} />
+              <Route path='/components/Slider' element={<Slider />} />
+              <Route path='/components/Free_param' element={<Free_param />} />
           </Routes>
         </BrowserRouter>
         </div>
