@@ -7,6 +7,9 @@ import myImageIconHeduser from '../img/Icon_hed_user.png'
 import Heder from "../components/Heder";
 import Slider_free from "../components/Slider_free"
 import Chart from 'chart.js/auto';
+import LineChart from "../components/LineChart";
+import Free_param from "../components/Free_param";
+import Footer from "../components/Footer";
 
 export default function Free_analytics() {
     const navigate = useNavigate();
@@ -14,37 +17,27 @@ export default function Free_analytics() {
     
    
     return (
-        <div className="free_analytics" id="free_analytics">
-          <div className="Free_analytics_hed">
-            <Heder/>
-          </div>
-        <div className="Free_analytics_slider">
-            <Slider_free/>
-        </div>         
-          
+        <div className="free_analytics" id="free_analytics">     
+            <Heder/>       
+        <div className="Free_analytics_p">
+            <div className="Free_analytics_slider">
+                <Slider_free/>
+            </div>         
+        
             <div className="free_analytic_doby">
                     <Button className="button_fre_pref">Предыдущий месяц</Button>
                     <Button className="button_fre_pref">Следующий меняц</Button>
                     <Button className="button_fre_pref">Год</Button>
-                    <Button className="button_fre_pref">5 лет</Button>          
-            </div>
-
-            <div className="Button_grath">
-
-                <div className="grath">                 
-
-                </div>
-
-                <div className="grath">
-                    <p>e</p>
-                </div>
-                <div className="grath">
-                    <p>e</p>
-                </div>
-                <div className="grath">
-                    <p>e</p>
-                </div>
+                    <Button className="button_fre_pref">5 лет</Button>  
+                    <div className="free_analytic_Chart">
+                        <LineChart/>
+                    <div className="free_analytic_param">
+                        <Free_param/>
+                    </div>
+                </div>        
             </div>
         </div>
+         <Footer/>   
+    </div>
     )
 }
