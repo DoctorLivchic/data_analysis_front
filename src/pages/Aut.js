@@ -11,31 +11,8 @@ export default function Auth() {
     const navigate = useNavigate();
     const { Content } = Layout;
     const [username, setUsername] = useState('')
-  
-    let login = undefined;
-    let password = undefined;
-
-    function handleChange(event) {
-        const target = event.target;
-        const value = target.value;
-        if (target.name === "login"){login = value}
-        if (target.name === "password"){password = value}
-    }
-    async function handleSubmit(event){
-        event.preventDefault();
-        if (login === "dir" && password === "dir") {
-            __ROLE__.role = "DIR";
-            navigate("/worker");
-        }
-        if (login === "prog" && password === "prog") {
-            __ROLE__.role = "PROG";
-            navigate("/move");
-        }
-        if (login === "test" && password === "test") {
-            __ROLE__.role = "TEST";
-            navigate("/move");
-    }
-}
+    const [emailDirty, setemailDirty] = useState(false)
+    const [emailError, setemailError] = useState('Email не может быть пустым')
 
     return (
         
@@ -65,6 +42,7 @@ export default function Auth() {
                 ]
                 }
                 >
+                    {(emailDirty && emailError) && <div style={{color:'red'}}>{emailError}</div>}
                     <Input.Password className="inp_aut" placeholder="Введите пароль" />
                 </Form.Item>
                 

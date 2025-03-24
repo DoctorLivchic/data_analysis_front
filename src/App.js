@@ -22,6 +22,7 @@ class App extends Component {
         <div id='main'>
         <BrowserRouter>
           <Routes>
+            
               <Route path='/' element={<HomePage />} />
               <Route path='/pages/auth' element={<Aut />} />
               <Route path='/pages/reg' element={<Reg />} />

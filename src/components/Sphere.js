@@ -4,7 +4,7 @@ export class Sphere extends Component {
   render() {
     return (
       <div>
-        
+        <p>Карточки</p>
       </div>
     )
   }

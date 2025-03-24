@@ -19,10 +19,9 @@ export default function Free_analytics() {
     return (
         <div className="free_analytics" id="free_analytics">
             <Heder/>
-        <div className="Free_analytics_p">
-            <div className="Free_analytics_slider">
+        <div className="Free_analytics_p">           
                 <Slider_free/>
-            </div>
+            
 
             <div className="free_analytic_doby">
                     <Button className="button_fre_pref">Предыдущий месяц</Button>

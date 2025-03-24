@@ -20,6 +20,8 @@ export default function Slider_free() {
                 <p className="slider_free_button_p">Опции</p>
                 <Button className="button_fre_anali">Отчеты</Button>
                 <Button className="button_fre_anali">Сводки</Button>
+                <Button className="button_fre_anali">О проекте</Button>  
+                <Button className="button_fre_anali">Контакты</Button> 
             </div>
             <div className="slider_free_button_exit">
                 <Button onClick={() => {navigate('/')}} className="button_fre_anali">Выход</Button>

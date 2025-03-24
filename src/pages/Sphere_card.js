@@ -6,6 +6,7 @@ import myImageIconHed from '../img/Icon_hed.png'
 import myImageIconHeduser from '../img/Icon_hed_user.png'
 import Heder from "../components/Heder";
 import Sphere from "../components/Sphere";
+import Slider from "../components/Slider";
 
 
 export default function Sphere_card() {
@@ -15,7 +16,14 @@ export default function Sphere_card() {
     return (
         <div className="Sphere_card" id="Sphere_card">
             <Heder/>
-            <Sphere/>
+                <div className="Sphere_card_slider">
+                    <Slider/>    
+                    <div className="Sphere_slider">
+                        <Sphere/>
+                    </div>
+
+                </div>  
+            
         </div>
     )
 }
