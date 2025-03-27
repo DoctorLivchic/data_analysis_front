@@ -13,6 +13,10 @@ import Sphere from './components/Sphere'
 import Slider_free from './components/Slider_free';
 import Slider from './components/Slider';
 import Free_param from './components/Free_param';
+import Direction from './pages/Direction';
+import Contacts from './pages/Contacts';
+import About from './pages/About';
+import LK from './pages/LK';
 
 class App extends Component {
  
@@ -31,10 +35,15 @@ class App extends Component {
               <Route path='/pages/MainAutCard1' element={<MainAutCard1 />} />
               <Route path='/pages/Sphere_card' element={<Sphere_card />} />
               <Route path='/pages/HomePageAut' element={<HomePageAut />} />
+              <Route path='/pages/Direction' element={<Direction />} />
+              <Route path='/pages/Contacts' element={<Contacts />} />
+              <Route path='/pages/About' element={<About />} />
+              <Route path='/pages/LK' element={<LK />} />
               <Route path='/components/Sphere' element={<Sphere />} />
               <Route path='/components/Slider_free' element={<Slider_free />} />
               <Route path='/components/Slider' element={<Slider />} />
               <Route path='/components/Free_param' element={<Free_param />} />
+              
           </Routes>
         </BrowserRouter>
         </div>

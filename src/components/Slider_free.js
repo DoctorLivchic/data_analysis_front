@@ -29,3 +29,5 @@ export default function Slider_free() {
         </Sider> 
     )
 }
+
+

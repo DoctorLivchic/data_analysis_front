@@ -10,11 +10,11 @@ export default function Heder() {
         <header>
         <div className="head_free">
             <div className="head_free_icon">
-                 <img src={myImageIconHed } className="icon_heder" onClick={() => {navigate('/pages/MainAutCard1')}}/>
+                 <img src={myImageIconHed } className="icon_heder" onClick={() => {navigate('/pages/free_analytics')}}/>
             </div>
 
             <div className="head_free_user">
-                <img src={myImageIconHeduser } className="icon_heder_user"onClick={() => {navigate('/pages/LK')}} />
+                <img src={myImageIconHeduser } className="icon_heder_user" />
             </div>
         </div> 
     </header>

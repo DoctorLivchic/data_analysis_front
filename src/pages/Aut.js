@@ -14,6 +14,26 @@ export default function Auth() {
     const [emailDirty, setemailDirty] = useState(false)
     const [emailError, setemailError] = useState('Email не может быть пустым')
 
+    //Валидация мэйла
+  function ValidMail(email) {
+    var re = /^[\w-\.]+@[\w-]+\.[a-z]{2,4}$/i;
+    var valid = re.test(email);
+    return valid;
+  }
+
+  //Валидация имени
+  function validName(name) {
+    var re = /^[A-ZА-ЯЁ]+$/i;
+    var valid = re.test(name);
+    return valid;
+  }
+
+  function setRed(formId) {
+    document.getElementById(formId).setAttribute("class", "form-style1");
+  }
+  function setWhite(formId) {
+    document.getElementById(formId).setAttribute("class", "form-style");
+  }
     return (
         
     <div className="auth" id="auth">
@@ -26,10 +46,16 @@ export default function Auth() {
                 <h1 className="auth_vhod">Вход в систему</h1>
                 <div className="auth_text">
                     <p className="auth_vhod">Еще не зарегестрированны ? </p>
-                    <p className="auth_vhod_reg" onClick={() => {navigate('/pages/reg')}} > Регистрация</p>
+                    <p className="" onClick={() => {navigate('/pages/reg')}} > Регистрация</p>
                 </div>   
                 <p className="auth_vhod_mail"> E-mail</p>
-                <Input className="inp_aut" placeholder="Введите E-mail" />
+                <Input className="inp_aut" 
+                placeholder="Адрес электронной почты" 
+                id="logemailIn"
+                autoComplete="off"
+                type="email"
+                name="logemail"
+                />
                 <p className="auth_vhod_mail"> Пароль</p>
                 <Form.Item
                 name="password"
@@ -43,7 +69,13 @@ export default function Auth() {
                 }
                 >
                     {(emailDirty && emailError) && <div style={{color:'red'}}>{emailError}</div>}
-                    <Input.Password className="inp_aut" placeholder="Введите пароль" />
+                    <Input.Password 
+                    className="inp_aut" 
+                    placeholder="Введите пароль" 
+                    id="logpassIn"
+                    autoComplete="off"
+                    name="logpass"
+                    />
                 </Form.Item>
                 
                     <div className="button_aut">

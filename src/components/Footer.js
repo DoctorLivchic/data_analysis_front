@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 
-export class Footer extends Component {
-  render() {
+export default function Footer() {
+
     return (
       <div>
         <p className='Footer'> Аналитическая система кадрового потенциала Пермского карая © </p>
       </div>
     )
-  }
+  
 }
 
-export default Footer
+
