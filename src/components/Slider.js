@@ -10,7 +10,7 @@ export default function Slider_free() {
         <Sider className="slider_free">
             <div className="slider_free_button">
                 <p className="slider_free_button_p">Главная</p>
-                <Button onClick={() => {navigate('/pages/Sphere_card')}} className="button_fre_anali">Cферы</Button>
+                <Button onClick={() => {navigate('/pages/Sphere')}} className="button_fre_anali">Cферы</Button>
                 <Button onClick={() => {navigate('/pages/Direction')}} className="button_fre_anali">Направления</Button>
                 <Button className="button_fre_anali">Аналитика</Button>                       
             </div>

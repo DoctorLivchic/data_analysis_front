@@ -13,7 +13,8 @@ export default function Auth() {
     const [username, setUsername] = useState('')
     const [emailDirty, setemailDirty] = useState(false)
     const [emailError, setemailError] = useState('Email не может быть пустым')
-
+    const [user_id, setUser_id] = useState(0);
+    
     //Валидация мэйла
   function ValidMail(email) {
     var re = /^[\w-\.]+@[\w-]+\.[a-z]{2,4}$/i;

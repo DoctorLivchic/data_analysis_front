@@ -18,7 +18,7 @@ export default function MainAutCard1() {
         <div className="analitic_blok">
             <Slider/>    
             <div className="free_analytic_doby">
-                <LineChart />
+                
             </div>
         </div>   
         <Footer/>
@@ -26,3 +26,5 @@ export default function MainAutCard1() {
         </div>
     )
  }
+
+ 

@@ -30,7 +30,8 @@ export default function Free_analytics() {
                     <Button className="button_fre_pref">5 лет</Button>
                     <RangePicker
                     className="button_fre_pref"
-                    ></RangePicker>
+                    >
+                    </RangePicker>
                     <div className="free_analytic_Chart">
                         <LineChart/>
                     <div className="free_analytic_param">

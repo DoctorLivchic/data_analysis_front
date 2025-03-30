@@ -5,11 +5,11 @@ import { Layout } from "antd";
 import myImageIconHed from '../img/Icon_hed.png'
 import myImageIconHeduser from '../img/Icon_hed_user.png'
 import Heder from "../components/Heder";
-import Sphere from "../components/Sphere";
 import Slider from "../components/Slider";
+import Sphere_card from "../components/Sphere_card";
 
 
-export default function Sphere_card() {
+export default function Sphere() {
     const navigate = useNavigate();
 	const { Sider, Content } = Layout;
     
@@ -19,7 +19,18 @@ export default function Sphere_card() {
                 <div className="Sphere_card_slider">
                     <Slider/>    
                     <div className="Sphere_slider">
-                        <Sphere/>
+                        <Sphere_card/>
+                        <Sphere_card/>
+                        <Sphere_card/>
+                        <Sphere_card/>
+                        <Sphere_card/>
+                        <Sphere_card/>
+                        <Sphere_card/>
+                        <Sphere_card/>
+                        <Sphere_card/>
+                        
+                       
+                        
                     </div>
 
                 </div>  
