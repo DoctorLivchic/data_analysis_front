@@ -17,6 +17,7 @@ import Direction from './pages/Direction';
 import Contacts from './pages/Contacts';
 import About from './pages/About';
 import LK from './pages/LK';
+import Report from './pages/Reports';
 
 class App extends Component {
  
@@ -39,6 +40,7 @@ class App extends Component {
               <Route path='/pages/Contacts' element={<Contacts />} />
               <Route path='/pages/About' element={<About />} />
               <Route path='/pages/LK' element={<LK />} />
+              <Route path='/pages/Report' element={<Report />} />
               <Route path='/components/Sphere' element={<Sphere />} />
               <Route path='/components/Slider_free' element={<Slider_free />} />
               <Route path='/components/Slider' element={<Slider />} />

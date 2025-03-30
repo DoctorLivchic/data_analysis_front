@@ -8,23 +8,22 @@ import __ROLE__ from './CONST';
 import Heder from "../components/Heder";
 import Slider from "../components/Slider";
 
-export default function Contacts() {
+export default function Report() {
     const navigate = useNavigate();
     const [buttonTextLike, setButtonTextLike] = useState(0);
     
     const { Sider, Content } = Layout;
 
     return (
-        <div className="Contacts" >
+        <div className="Direction" >
             <Heder/>
             <div className="analitic_blok">
-            <Slider/>
-            <div className="free_analytic_doby">
-             <p className="Cont">Наши контакты</p>      
+             <Slider/>   
+             <div className="free_analytic_doby">   
+                <p>Выберите отчет для сформирования</p>
             </div>
             </div>
-            
-            
+            <Footer/>
 
         </div>
     )
