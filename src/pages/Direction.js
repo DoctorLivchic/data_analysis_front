@@ -7,6 +7,7 @@ import { EyeInvisibleOutlined, EyeTwoTone } from '@ant-design/icons';
 import __ROLE__ from './CONST';
 import Heder from "../components/Heder";
 import Slider from "../components/Slider";
+import Direction_card from "../components/Direction_card";
 
 export default function Direction() {
     const navigate = useNavigate();
@@ -17,11 +18,11 @@ export default function Direction() {
     return (
         <div className="Direction" >
             <Heder/>
-            <div className="analitic_blok">
+            <div className="Sphere_card_slider">
              <Slider/>   
-             <div className="free_analytic_doby">   
-                <p>Направления</p>
-            </div>
+                <div className="Sphere_slider">   
+                    <Direction_card></Direction_card>
+                </div>
             </div>
             <Footer/>
 

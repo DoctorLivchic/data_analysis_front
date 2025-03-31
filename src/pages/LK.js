@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import { Layout } from "antd";
 import { EyeInvisibleOutlined, EyeTwoTone } from '@ant-design/icons';
 import __ROLE__ from './CONST';
-import Heder from "../components/Heder";
+import Heder_lk from "../components/Heder_lk";
 import Slider from "../components/Slider";
 
 export default function Contacts() {
@@ -16,12 +16,12 @@ export default function Contacts() {
 
     return (
         <div className="Contacts" >
-            <Heder/>
+            <Heder_lk/>
             <div className="analitic_blok">
-            <Slider/>
-            <div className="free_analytic_doby">
-             <p>Инфа о пользователе</p>      
-            </div>
+                <Slider/>
+                <div className="free_analytic_doby">
+                    <p>Инфа о пользователе</p>      
+                </div>
             </div>
             
             

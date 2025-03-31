@@ -28,9 +28,8 @@ export default function Sphere() {
                         <Sphere_card/>
                         <Sphere_card/>
                         <Sphere_card/>
-                        
-                       
-                        
+                        <Sphere_card/>
+ 
                     </div>
 
                 </div>  

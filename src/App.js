@@ -41,6 +41,7 @@ class App extends Component {
               <Route path='/pages/LK' element={<LK />} />
               <Route path='/pages/Report' element={<Report />} />
               <Route path='/components/Sphere' element={<Sphere />} />
+              
               <Route path='/components/Slider_free' element={<Slider_free />} />
               <Route path='/components/Slider' element={<Slider />} />
               <Route path='/components/Free_param' element={<Free_param />} />
