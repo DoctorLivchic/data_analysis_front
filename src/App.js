@@ -18,6 +18,7 @@ import Contacts from './pages/Contacts';
 import About from './pages/About';
 import LK from './pages/LK';
 import Report from './pages/Reports';
+import { AuthProvider } from './pages/AuthProvider';
 
 class App extends Component {
  
@@ -25,6 +26,7 @@ class App extends Component {
   render() {
     return (
         <div id='main'>
+      <AuthProvider>
         <BrowserRouter>
           <Routes> 
               <Route path='/' element={<HomePage />} />
@@ -41,7 +43,6 @@ class App extends Component {
               <Route path='/pages/LK' element={<LK />} />
               <Route path='/pages/Report' element={<Report />} />
               <Route path='/components/Sphere' element={<Sphere />} />
-              
               <Route path='/components/Slider_free' element={<Slider_free />} />
               <Route path='/components/Slider' element={<Slider />} />
               <Route path='/components/Free_param' element={<Free_param />} />
@@ -49,6 +50,7 @@ class App extends Component {
               
           </Routes>
         </BrowserRouter>
+        </AuthProvider>
         </div>
     )
   }

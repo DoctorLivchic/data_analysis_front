@@ -18,8 +18,8 @@ export default function News() {
 
     return (
     <div className="main_page" id="main_page">	
-                   
-    <div className="cent" id="cent">
+                 
+    <div className="centm" id="cent">
         <Content className="contentStyle">
 				<div className="button_main_page">		
 					<img src={myImageIcon } className="img_page_button"/>
@@ -32,12 +32,6 @@ export default function News() {
 									
         </Content>
 
-		<Content className="cent_anim">
-			<div className="img_page_home_q">
-					<Main_Page_Anim/>
-			</div>  
-		</Content>
-		
 	 </div>  
         </div>   
     )

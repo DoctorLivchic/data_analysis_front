@@ -3,17 +3,39 @@ import {useNavigate} from "react-router-dom";
 import { Button, Form, Input, Checkbox, Select, notification,Menu,Image } from "antd";
 import Footer from "../components/Footer";
 import { Layout } from "antd";
+import { useForm } from 'antd/es/form/Form';
 import { EyeInvisibleOutlined, EyeTwoTone } from '@ant-design/icons';
 import myImageIcon from '../img/Frame_19.png'
 import __ROLE__ from './CONST';
+import axios from 'axios';
+import {requestToApi} from '../components/Request';
 
 export default function Auth() {
     const navigate = useNavigate();
     const { Content } = Layout;
-    const [username, setUsername] = useState('')
-    const [emailDirty, setemailDirty] = useState(false)
-    const [emailError, setemailError] = useState('Email не может быть пустым')
-    const [user_id, setUser_id] = useState(0);
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [name, setName] = useState('');
+    const [error, setError] = useState(null);
+    const [successMessage, setSuccessMessage] = useState('');
+    const [form] = useForm();
+    
+    
+async function handleSubmit(event){
+      event.preventDefault(); // Предотвращаем перезагрузку страницы
+
+      requestToApi.updateUserDetails(undefined)
+      form.validateFields().then((values) => {
+        requestToApi.post('/auth/signup', values)
+            .then(data => {
+                if(data.token !== undefined){
+                    requestToApi.updateUserDetails(data)
+                    navigate("/pages/MainAutCard1")
+                }
+            });
+    })
+}
+
     
     //Валидация мэйла
   function ValidMail(email) {
@@ -29,12 +51,6 @@ export default function Auth() {
     return valid;
   }
 
-  function setRed(formId) {
-    document.getElementById(formId).setAttribute("class", "form-style1");
-  }
-  function setWhite(formId) {
-    document.getElementById(formId).setAttribute("class", "form-style");
-  }
     return (
         
     <div className="auth" id="auth">
@@ -51,11 +67,11 @@ export default function Auth() {
                 </div>   
                 <p className="auth_vhod_mail"> E-mail</p>
                 <Input className="inp_aut" 
-                placeholder="Адрес электронной почты" 
-                id="logemailIn"
-                autoComplete="off"
-                type="email"
-                name="logemail"
+                  placeholder="Адрес электронной почты" 
+                  id="logemailIn"
+                  autoComplete="off"
+                  type="email"
+                  name="logemail"
                 />
                 <p className="auth_vhod_mail"> Пароль</p>
                 <Form.Item
@@ -69,7 +85,7 @@ export default function Auth() {
                 ]
                 }
                 >
-                    {(emailDirty && emailError) && <div style={{color:'red'}}>{emailError}</div>}
+                    {(email && email) && <div style={{color:'red'}}>{error}</div>}
                     <Input.Password 
                     className="inp_aut" 
                     placeholder="Введите пароль" 
@@ -79,9 +95,9 @@ export default function Auth() {
                     />
                 </Form.Item>
                 
-                    <div className="button_aut">
-                        <Button onClick={() => {navigate('/pages/MainAutCard1')}} className='btn_inp_aut'>Войти</Button>
-                        <Button onClick={() => {navigate('/')}} className='btn_inp_aut'>Назад</Button>
+                    <div className="button_aut">                 
+                        <Button onClick={handleSubmit} className='btn_inp_aut'>Войти</Button>
+                        <Button onClick={() => {navigate('/')}} className='btn_inp_aut'>Назад</Button>                   
                     </div>			           	
             </Content>
         </div>  
