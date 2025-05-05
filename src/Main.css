@@ -7,6 +7,9 @@
 .p{
   font-family: Comfortaa, sans-serif;
 }
+.p_main_page{
+  padding-left: 23%;
+}
 .h1{
   font-size: 300px;
 }
@@ -409,9 +412,9 @@ padding-left: 10%;
 }
 .img_page_button{
   justify-content: center;
-  margin-left: 20%;
+  margin-left: 23%;
   margin-top: 10%;
-
+  width: 15%;
 }
 .button_fre_pref{
   margin-left: 2.8%;

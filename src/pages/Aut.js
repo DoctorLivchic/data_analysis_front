@@ -23,7 +23,7 @@ export default function Auth() {
     
 async function handleSubmit(event){
       event.preventDefault(); // Предотвращаем перезагрузку страницы
-
+      navigate("/pages/MainAutCard1")
       requestToApi.updateUserDetails(undefined)
       form.validateFields().then((values) => {
         requestToApi.post('/auth/signup', values)

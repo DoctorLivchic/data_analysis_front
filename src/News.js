@@ -5,8 +5,7 @@ import { Layout } from "antd";
 import { HeartTwoTone, DislikeTwoTone, LikeTwoTone } from "@ant-design/icons";
 import myImage from './img/img_home.png'
 import myImageIcon from './img/Frame_19.png'
-import myImageMan from './img/man.png'
-import myImagegraph from './img/graph.png'
+import fr_text from './img/fr_text.png'
 import Main_Page_Anim from './components/Main_Page_Anim'
 import { Footer } from "antd/es/layout/layout";
 
@@ -23,6 +22,7 @@ export default function News() {
         <Content className="contentStyle">
 				<div className="button_main_page">		
 					<img src={myImageIcon } className="img_page_button"/>
+					<img src={fr_text } className="img_page_button"/>
 						<Button onClick={() => {navigate('/pages/free_analytics')}} className='btn_home'>Аналитика</Button>
 							<Form.Item>	
 								<Button onClick={() => {navigate('/pages/Auth')}} className='btn_home'>Вход</Button>
