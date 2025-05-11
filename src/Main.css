@@ -410,12 +410,17 @@ padding-left: 10%;
   margin-top: -46.5%;
   margin-left: 8%;
 }
+.img_page_b{
+display: flex;
+flex-direction: row;
+}
 .img_page_button{
   justify-content: center;
   margin-left: 23%;
   margin-top: 10%;
   width: 15%;
 }
+
 .button_fre_pref{
   margin-left: 2.8%;
   margin-top: 0.3%;

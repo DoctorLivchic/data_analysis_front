@@ -20,9 +20,11 @@ export default function News() {
                  
     <div className="centm" id="cent">
         <Content className="contentStyle">
-				<div className="button_main_page">		
-					<img src={myImageIcon } className="img_page_button"/>
-					<img src={fr_text } className="img_page_button"/>
+				<div className="button_main_page">	
+					<div className="img_page_b">
+						<img src={myImageIcon } className="img_page_button"/>
+						<img src={fr_text } className="img_page_button"/>
+					</div>
 						<Button onClick={() => {navigate('/pages/free_analytics')}} className='btn_home'>Аналитика</Button>
 							<Form.Item>	
 								<Button onClick={() => {navigate('/pages/Auth')}} className='btn_home'>Вход</Button>
