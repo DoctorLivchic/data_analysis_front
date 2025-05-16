@@ -93,6 +93,15 @@ body {
 .button_main_page{
 padding-left: 10%;
 }
+.img_b{
+  display: flex;
+  flex-direction: row;
+}
+.img_page_text{
+  
+  height: 30%;
+  padding-top: 13%
+}
 .contentStyle{
   padding-bottom: 15%;
   text-align: "center";
@@ -416,8 +425,11 @@ flex-direction: row;
 }
 .img_page_button{
   justify-content: center;
-  margin-left: 23%;
+  margin-left: 16%;
   margin-top: 10%;
+  width: 15%;
+}
+.img_page_text{
   width: 15%;
 }
 

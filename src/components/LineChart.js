@@ -9,11 +9,11 @@ ChartJS.register(LineElement, PointElement, LinearScale, Title, Tooltip, Legend)
 const LineChart = () => {
   // Данные для графика
   const data = {
-    labels: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь'], // Метки по оси X
+    labels: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'], // Метки по оси X
     datasets: [
       {
         label: 'Продажи за полгода',
-        data: [12, 19, 3, 5, 2, 3], // Значения по оси Y
+        data: [12, 19, 3, 5, 2, 3,3,2,4,4,5], // Значения по оси Y
         fill: false,
         backgroundColor: 'rgb(75, 192, 192)',
         borderColor: 'rgba(75, 192, 192, 0.2)',
@@ -39,3 +39,4 @@ const LineChart = () => {
 };
 
 export default LineChart;
+
