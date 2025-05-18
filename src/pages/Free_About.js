@@ -5,10 +5,9 @@ import Footer from "../components/Footer";
 import { Layout } from "antd";
 import { EyeInvisibleOutlined, EyeTwoTone } from '@ant-design/icons';
 import __ROLE__ from './CONST';
-import Heder from "../components/Heder";
-import Slider from "../components/Slider";
+import Heder_free from "../components/Heder_free";
+import Slider_free from "../components/Slider_free";
 import meImgpspu from '../img/pspu.png'
-
 
 export default function Contacts() {
     const navigate = useNavigate();
@@ -17,9 +16,9 @@ export default function Contacts() {
 
     return (
         <div className="Contacts" >
-            <Heder/>
+            <Heder_free/>
             <div className="analitic_blok">
-              <Slider/>
+              <Slider_free/>
               <div className="analytic_doby_about">
                 <div className="text_pro">
                     <h2 className="h2">О проекте:</h2> 
@@ -31,7 +30,7 @@ export default function Contacts() {
                 <img className="pspu" src={meImgpspu}></img>
                 </div>
                
-            </div>  
+            </div> 
             </div>
            
            

@@ -5,6 +5,7 @@ import HomePage from './HomePage';
 import Aut from './pages/Aut';
 import Reg from './pages/Reg';
 import Free_analytics from './pages/Free_analytics';
+import Analytic from './pages/Analytic';
 import MainAut from './pages/MainAut';
 import MainAutCard1 from './pages/MainAutCard1';
 import HomePageAut from './pages/HomePageAut';
@@ -15,7 +16,9 @@ import Slider from './components/Slider';
 import Free_param from './components/Free_param';
 import Direction from './pages/Direction';
 import Contacts from './pages/Contacts';
+import Free_Contacts from './pages/Free_Contacts';
 import About from './pages/About';
+import Free_About from './pages/Free_About';
 import LK from './pages/LK';
 import Report from './pages/Reports';
 import { AuthProvider } from './pages/AuthProvider';
@@ -33,13 +36,16 @@ class App extends Component {
               <Route path='/pages/auth' element={<Aut />} />
               <Route path='/pages/reg' element={<Reg />} />
               <Route path='/pages/free_analytics' element={<Free_analytics />} />
+              <Route path='/pages/Analytic' element={<Analytic />} />
               <Route path='/pages/MainAut' element={<MainAut />} />
               <Route path='/pages/MainAutCard1' element={<MainAutCard1 />} />
               <Route path='/pages/Sphere' element={<Sphere />} />
               <Route path='/pages/HomePageAut' element={<HomePageAut />} />
               <Route path='/pages/Direction' element={<Direction />} />
               <Route path='/pages/Contacts' element={<Contacts />} />
+              <Route path='/pages/Free_Contacts' element={<Free_Contacts />} />
               <Route path='/pages/About' element={<About />} />
+              <Route path='/pages/Free_About' element={<Free_About />} />
               <Route path='/pages/LK' element={<LK />} />
               <Route path='/pages/Report' element={<Report />} />
               <Route path='/components/Sphere' element={<Sphere />} />

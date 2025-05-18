@@ -22,6 +22,13 @@ export default function Direction() {
              <Slider/>   
                 <div className="Sphere_slider">   
                     <Direction_card></Direction_card>
+                    <Direction_card></Direction_card>
+                    <Direction_card></Direction_card>
+                    <Direction_card></Direction_card>
+                    <Direction_card></Direction_card>
+                    <Direction_card></Direction_card>
+                    <Direction_card></Direction_card>
+                    <Direction_card></Direction_card>
                 </div>
             </div>
             <Footer/>

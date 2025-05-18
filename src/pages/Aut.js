@@ -63,7 +63,7 @@ async function handleSubmit(event){
                 <h1 className="auth_vhod">Вход в систему</h1>
                 <div className="auth_text">
                     <p className="auth_vhod">Еще не зарегестрированны ? </p>
-                    <p className="" onClick={() => {navigate('/pages/reg')}} > Регистрация</p>
+                    <p className="p_reg" onClick={() => {navigate('/pages/reg')}} > Регистрация</p>
                 </div>   
                 <p className="auth_vhod_mail"> E-mail</p>
                 <Input className="inp_aut" 

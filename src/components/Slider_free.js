@@ -11,8 +11,9 @@ export default function Slider_free() {
             
             <div className="slider_free_button">
                 <p className="slider_free_button_p">Главная</p>
-                <Button className="button_fre_anali">О проекте</Button>  
-                <Button className="button_fre_anali">Контакты</Button>                         
+                <Button onClick={()=>{navigate('/pages/free_analytics')}} className="button_fre_anali">Аналитика</Button>  
+                <Button onClick={()=>{navigate('/pages/Free_About')}} className="button_fre_anali">О проекте</Button>  
+                <Button onClick={()=>{navigate('/pages/Free_Contacts')}} className="button_fre_anali">Контакты</Button>                         
             </div>
             <div className="slider_free_button">
                 <p className="slider_free_button_p">Опции</p>

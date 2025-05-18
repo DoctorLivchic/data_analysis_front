@@ -20,7 +20,11 @@ export default function Contacts() {
             <div className="analitic_blok">
                 <Slider/>
                 <div className="free_analytic_doby">
-                    <p>Инфа о пользователе</p>      
+                    <h2 className="h2">Мой Профиль</h2>   
+                    <p className="p1">ФИО</p> 
+                    <p className="p1">Почта</p> 
+                    <Button className="button_fre_pref">Сменить пароль</Button>
+
                 </div>
             </div>
             

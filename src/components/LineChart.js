@@ -15,8 +15,8 @@ const LineChart = () => {
         label: 'Продажи за полгода',
         data: [12, 19, 3, 5, 2, 3,3,2,4,4,5], // Значения по оси Y
         fill: false,
-        backgroundColor: 'rgb(75, 192, 192)',
-        borderColor: 'rgba(75, 192, 192, 0.2)',
+        backgroundColor: 'rgb(0, 0, 0)',
+        borderColor: 'rgba(34, 48, 48, 0.2)',
       },
     ],
   };

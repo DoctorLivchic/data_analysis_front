@@ -4,6 +4,22 @@
   background-position: center;
   backdrop-filter: blur(100px);
 }
+@font-face {
+       font-family: 'MyCustomFont1';
+       src: url('./font/comfortaa.woff2') format('woff2'),
+            url('./font/comfortaa.woff') format('woff');
+       font-weight: normal;
+       font-style: normal;
+   }
+
+  @font-face {
+     font-family: 'MyCustomFont';
+      src: url('./font/roundsblack.woff2') format('woff2'),
+          url('./font/roundsblack.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+   }
+
 .p{
   font-family: Comfortaa, sans-serif;
 }
@@ -57,7 +73,7 @@
   color: #fff;
   border-radius: 20px;
   border-width: 0px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'MyCustomFont1', sans-serif;
   height: 55px;
   margin-top:11%;
   padding-left: 1%;
@@ -123,6 +139,7 @@ padding-left: 10%;
   margin-left: 0.1%;
   display: flex;
   flex-direction: column;
+  border-radius: 20px;
 }
 .slider_free_button_exit{
   margin-top: 150%  ;
@@ -192,6 +209,7 @@ padding-left: 10%;
 }
 
 .slider_free_button_p{
+  font-family: 'MyCustomFont1', sans-serif;
   background-color: #6F7DE5;
   color: #000000;
   padding-left: 9%;
@@ -242,7 +260,7 @@ padding-left: 10%;
   border-radius: 20px;
   width: 56%;
   border-width: 0px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'MyCustomFont1', sans-serif;
   height: 55px;
   margin-top: 2%;
   
@@ -283,14 +301,16 @@ padding-left: 10%;
 
 }
 .p_reg{
- color: #000000;
+ color: #009fa5;
+ margin-top: 9px;
+ cursor: pointer;
 }
 .button_fre_anali{
+  font-family: 'MyCustomFont1', sans-serif;
   width: 100%;
   margin-top: repeat(auto-fit,1%); 
   padding-bottom: repeat(auto-fit,20%);
   font-size: repeat(auto-fit,130%); 
-
   font-style: "Regular";
   background-color: #6F7DE5;
   color: #030614;
@@ -332,12 +352,45 @@ padding-left: 10%;
   display: table;
   flex-direction: row;
 }
+.analytic_doby_about{
+  border-radius:  20px;
+  margin-right: 2%; 
+  padding-bottom: 1%;
+  padding-left: 2%;
+  width: 80%;  /* Займет 100% ширины родителя */
+  height: 300px; /* Задайте нужную высоту */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.pspu{
+  width: 20%;
+}
+ 
+
+   .h2 {
+       font-family: 'MyCustomFont', sans-serif; /* Указываем шрифт */
+       font-size: 24px;
+       color: #333;
+       font-weight: bold;
+       margin: 16px 0;
+   }
+
+
+   .p1 {
+       font-family: 'MyCustomFont1', sans-serif; /* Указываем шрифт */
+       font-size: 20px;
+       color: #333;
+       margin: 16px 0;
+   }
+
+
 .analitic_blok{
   border-radius:  20px;
   margin-top: 1%;
   padding-top: 1%;
   padding-bottom: 1%;
-  padding-left: 2%;
+  padding-left: 1.5%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -347,7 +400,7 @@ padding-left: 10%;
   margin-top: 1%;
   padding-top: 1%;
   padding-bottom: 1%;
-  padding-left: 2%;
+  padding-left: 1.6%;
   display: flex;
   flex-direction: row;
  
